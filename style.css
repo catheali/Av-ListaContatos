@@ -1,0 +1,13 @@
+body{ font-family: 'Alkalami', serif;
+
+}
+.bar{
+    
+    height: 80px;
+    width: 100%;
+    color: #ffffffff;
+    background-color: rgb(58, 228, 180);
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
