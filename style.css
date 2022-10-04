@@ -1,7 +1,7 @@
 body {
   font-family: "Alkalami", serif;
-  background: rgb(4,114,77);
-  background: linear-gradient(0deg, rgba(4,114,77,1) 0%, rgba(88,111,124,1) 100%);
+  /* background: rgb(4,114,77); */
+   background: linear-gradient(0deg, rgba(4,114,77,1) 10%, rgba(88,111,124,1) 80%); 
 }
 
 @font-face {
@@ -38,5 +38,15 @@ body {
     --bs-btn-border-color: #80d38b;
 }
 .input-group-text{
-    background-color: rgb(113, 194, 120);
+    background-color:#51ae65;
+    
+}
+.modal-header {
+    font-family: Quick;
+    color: #ffffffff;
+    background-color: #327c42;
+}
+.btn-primary{
+    --bs-btn-bg: #327c42;
+    --bs-btn-border-color: #327c42;
 }
