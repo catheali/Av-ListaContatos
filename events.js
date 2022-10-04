@@ -37,12 +37,17 @@ function adcContato() {
   let dados = {
     nome: input_nome.value,
     local: input_local.value,
-    telefone: parseInt(input_telefone.value),
+    telefone: input_telefone.value,
   };
+
+  if (dados.nome.trim() === '' || dados.local.trim() === '' || dados.telefone === '' ){
+    alert('Digite o contato corretamente !')
+    return;    
+}
+  
   fetch(API_URL + "/contatos", {
-    //coloca só o url base pq pode ter outras api e concatena a que vai ser usada
     method: "POST",
-    body: JSON.stringify(dados), //pega os dados e transforma em uma string json
+    body: JSON.stringify(dados), 
     headers: {
       "Content-Type": "application/json",
     },
@@ -50,9 +55,9 @@ function adcContato() {
     .then((resposta) => resposta.json())
     .then((resposta) => atualizarLista());
 
-  form_add.reset(); // limpa os dados digitados do formulario
+  form_add.reset(); 
   let x = document.querySelector('[data-bs-dismiss="modal"]');
-  x.dispatchEvent(new Event("click")); //simula o evento de fechar o modal
+  x.dispatchEvent(new Event("click")); 
 }
 
 async function excluir(id) {
@@ -62,7 +67,7 @@ async function excluir(id) {
   }
   await fetch(API_URL + "/contatos/" + id, {
     method: "DELETE",
-  });
+  })
   atualizarLista();
 }
 
@@ -91,3 +96,4 @@ function atualizarLista() {
             `;
       });
     });
+}
