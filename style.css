@@ -1,13 +1,42 @@
-body{ font-family: 'Alkalami', serif;
-
+body {
+  font-family: "Alkalami", serif;
+  background: rgb(4,114,77);
+  background: linear-gradient(0deg, rgba(4,114,77,1) 0%, rgba(88,111,124,1) 100%);
 }
-.bar{
+
+@font-face {
+    font-family: Quick;
+    src: url(font/Quick.ttf);
+ }
+.bar {
+  height: 80px;
+  width: 100%;
+  color: #ffffffff;
+  background-color: #26363e;
+  font-family: Quick;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-warning{
+    --bs-btn-bg: #80d38b;
+    --bs-btn-border-color:  #80d38b;
+}
+.table{
     
-    height: 80px;
-    width: 100%;
-    color: #ffffffff;
-    background-color: rgb(58, 228, 180);
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
+    --bs-table-active-bg: rgb(165 17 17 / 10%);
+    --bs-table-hover-bg: rgb(166 255 226 / 23%);
+}
+
+.card{
+    --bs-card-bg: #ffffff47;
+    --bs-card-cap-bg: rgb(163 146 146 / 3%);
+}
+.btn-warning{
+    --bs-btn-bg: #80d38b;
+    --bs-btn-border-color: #80d38b;
+}
+.input-group-text{
+    background-color: rgb(113, 194, 120);
 }
