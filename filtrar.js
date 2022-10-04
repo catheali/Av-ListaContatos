@@ -6,15 +6,14 @@ function filtrar(){
        if(isNaN(posicao)){ 
            continue;
        }
-       let coluna1 = linhas[posicao].children[1].innerText.toLowerCase(); 
-       let coluna2 = linhas[posicao].children[2].innerText.toLowerCase();
-       let coluna3 = linhas[posicao].children[3].innerText
-       let colunas = coluna1 + coluna2 + coluna3; // realizando pesquisa por local e nome
-       if( colunas.includes(buscaUsuario)){
+       let colNome = linhas[posicao].children[1].innerText.toLowerCase(); 
+       let colLocal = linhas[posicao].children[2].innerText.toLowerCase();
+       let colTelefone = linhas[posicao].children[3].innerText
+       let colDados = colNome + colLocal + colTelefone; // realizando pesquisa por local e nome
+       if( colDados.includes(buscaUsuario)){
            linhas[posicao].style.display = '';
        } else{
            linhas[posicao].style.display = 'none';
        }
-
       }
 }
