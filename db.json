@@ -42,4 +42,23 @@
       "telefone": 21365432167,
       "id": 7
     },
-}    
+    {
+      "nome": "Sofia Manzano",
+      "local": "São Paulo",
+      "telefone": 212121212121,
+      "id": 8
+    },
+    {
+      "nome": "Aurora Aksnes",
+      "local": "Noruega",
+      "telefone": 1506199626,
+      "id": 9
+    },
+    {
+      "nome": "Oliver Sykes",
+      "local": "Ashford UK",
+      "telefone": "999999992",
+      "id": 10
+    }
+  ]
+}
